@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DelphianLogic</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!------------------------------------------------->
+
+<section class="sec-one pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>DelphianLogic in Action</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectuer adipising slit, Aenean commodo</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------>
+<section class="sec-two mt-5 desktop">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'learning')" id="defaultOpen">
+    <img src="files/images/DL-learning.svg" alt="images" title="images" class="images">Learning </button>
+  <button class="tablinks" onclick="openCity(event, 'Technology')">
+    <img src="files/images/DL-technology.svg" alt="images" title="images" class="images"> Technology
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Communication')">
+   <img src="files/images/DL-communication.svg" alt="images" title="images" class="images">
+   Communication
+</button>
+</div>
+
+<div id="learning" class="tabcontent">
+  
+<div class="slideshow-container">
+
+<div class="mySlides">
+ 
+   <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+<div class="mySlides">
+  <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+<div class="mySlides">
+  <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+<!---------------------------------------------------->
+
+<!------------------------------------------------------->
+<div id="Technology" class="tabcontent">
+  
+<div class="slideshow-container">
+
+
+<div class="mySlides">
+ 
+   <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+<div class="mySlides">
+  <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+<div class="mySlides">
+  <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides-tech");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ 
+</div>
+<!---------------------------------------->
+
+<div id="Communication" class="tabcontent">
+ <div class="slideshow-container">
+ 
+<div class="mySlides">
+ 
+   <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+<div class="mySlides">
+  <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+
+<div class="mySlides">
+  <h6>DIGITAL LEARNING INFRASTRUCTURE</h6>
+    <h3>Usability enhancement and Training for Transaction Portal 
+for Customers</h3>
+     <a href="#">Learn More <img src="files/images/arrow-right.svg" class="img-fluid" alt="arrow" title="arrow"></a>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides-communi");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+<!------------------------------------->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+      </div>
+      <div class="col-lg-5 p-0">
+        <div>
+          <img src="files/images/DL-Communication.jpg" class="img-fluid" alt="images" title="images">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------------------------------------------->
+<section class="mobile">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!----------------------------------------->
+
+<div class="accordion">
+
+
+        <div class="content-container">
+            <div class="question">
+              <img src="files/images/DL-learning.svg" alt="images" title="images" class="img-fluid"> Learning
+            </div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Assumenda, neque provident nam odit ex, 
+                veritatis sit itaque quam ducimus suscipit illo 
+               
+            </div>
+        </div>
+
+        
+        <div class="content-container">
+            <div class="question">
+             <img src="files/images/DL-technology.svg" alt="images" title="images" class="img-fluid"> Technology
+           </div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Assumenda, neque provident nam odit ex, 
+                veritatis sit itaque quam ducimus suscipit illo 
+               
+            </div>
+        </div>
+
+        
+        <div class="content-container">
+            <div class="question">
+               <img src="files/images/DL-communication.svg" alt="images" title="images" class="img-fluid">Communication
+            </div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Assumenda, neque provident nam odit ex, 
+                veritatis sit itaque quam ducimus suscipit illo 
+                error quis ratione vero debitis 
+            </div>
+        </div>
+          
+      </div>
+
+
+
+        <!-------------------------------------->
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  const accordion = document.getElementsByClassName("content-container");
+
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    console.log(this);
+  });
+}
+
+</script>
+<!------------------------------------------------>  
+
+
+</body>
+</html>

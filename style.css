@@ -1,0 +1,332 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #11324d;
+}
+.sec-one
+{
+	text-align: center;
+}
+.sec-one h1
+{
+	font-size: 40px;
+	color: white;
+}
+.sec-one p{
+	font-size: 16px;
+	color: white;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  width: 40%;
+  height: 322px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+ display: block;
+    background-color: white;
+    color: black;
+    padding: 20px 8px;
+    width: 78%;
+    border: 1px solid #ffffff;
+    outline: none;
+    /* text-align: left; */
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 23px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    box-shadow: 0px 1px 6px 0px #c1c1c1;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 0px #c1c1c1;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 60%;
+  border-left: none;
+  height: 300px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 53px 30px 20px 45px;
+  text-align: center;
+  background-color: #2fb1fc;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+      text-align: center;
+    padding: 8px 7px 0px;
+    background: #2fb1fc;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #fff;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+/*=======================*/
+
+/* Slides */
+.mySlides-communi {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.mySlides-tech
+{
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+/*===================================*/
+.sec-two .container{
+	background-color: #2fb1fc;
+	padding: 0;
+}
+#learning h6{
+	background:#64b4c8;
+    color: white;
+    padding: 2px;
+    font-size: 13px;
+    font-weight: 700;
+}
+#learning h3{
+	    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+}
+#learning a{
+	    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 50px;
+}
+.sec-two .tab img{
+	width: 20%;
+}
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
+
+
+.main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.list {
+  margin: 90px 0;
+  overflow: hidden;
+  padding: 0;
+}
+.list li {
+  list-style-type: none;
+  padding: 0;
+}
+.list-heading {
+  background: #FFFFFF;
+  border: none;
+  border-bottom: solid 1px #F2F2F2;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.list-heading:before {
+  background: #ff4d4d;
+  content: '';
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(-90deg);
+  transition: all 0.2s ease-in-out;
+  width: 14px;
+}
+.list-heading:after {
+  background: #ff4d4d;
+  content: '';
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 14px;
+}
+.list-heading.active:before {
+  transform: rotate(0deg);
+}
+.list-heading.active h2, .list-heading:focus h2 {
+  position: relative;
+  color: #ff8383;
+}
+.mobile{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+.desktop
+{
+  display: none;
+}
+.mobile{
+  display: block;
+}
+}
+/*=================================*/
+
+
+.accordion {
+
+    background-color: #fff;
+    width: 100%;
+    border-radius: 2px;
+    padding: 20px;
+    color:black;
+    
+}
+
+.accordion .accordion-title {
+
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.accordion .content-container .question {
+
+    padding: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+
+    position: relative;
+}
+
+.accordion .content-container .question::after {
+
+    content: '+';
+    position: absolute;
+    right: -4px;
+}
+
+.accordion .content-container .answer {
+
+    padding-top: 20px;
+    line-height: 1.4;
+    font-size: 20px;
+
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+    
+
+} 
+
+.accordion .content-container.active .answer {
+
+    height: 100px;
+}
+
+.accordion .content-container.active .question {
+
+    font-size: 18px;
+    transition: .5s;
+}
+
+.accordion .content-container.active .question::after {
+
+    content: '-';
+    font-size: 35px;
+    transform: translateY(-20%);
+    transition: .5s;
+
+}
